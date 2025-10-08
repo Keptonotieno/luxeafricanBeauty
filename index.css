@@ -1523,38 +1523,7 @@
         text-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
         border-left: 3px solid var(--color-gold);
       }
-          
- /* =========================================
-   Responsive spacing adjustment
-   Reduce margin & padding between Hero and About
-   ========================================= */
-
-/* For tablets (screen width 768px and below) */
-@media (max-width: 768px) {
-  .hero {
-    margin-bottom: 0.8rem !important;
-    padding-bottom: 0.8rem !important;
-  }
-
-  .about {
-    margin-top: 0.8rem !important;
-    padding-top: 0.8rem !important;
-  }
-}
-
-/* For mobile devices (screen width 480px and below) */
-@media (max-width: 480px) {
-  .hero {
-    margin-bottom: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-  }
-
-  .about {
-    margin-top: 0.5rem !important;
-    padding-top: 0.5rem !important;
-  }
-}
-
+ 
 
       /* Dark theme mobile menu */
       .dark-theme .nav-menu {
