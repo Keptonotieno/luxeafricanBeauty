@@ -1524,33 +1524,37 @@
         border-left: 3px solid var(--color-gold);
       }
           
- /* For tablets (screen width 768px and below) */
+ /* =========================================
+   Responsive spacing adjustment
+   Reduce margin & padding between Hero and About
+   ========================================= */
+
+/* For tablets (screen width 768px and below) */
 @media (max-width: 768px) {
-  /* ↓ Adjusts spacing below hero section */
   .hero {
-    margin-bottom: 1rem; /* Reduced from default (was likely larger) */
-    padding-bottom: 1rem; /* Tightens vertical spacing */
+    margin-bottom: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
   }
 
-  /* ↓ Adjusts top spacing of About section */
   .about {
-    margin-top: 0.5rem; /* Reduced top margin */
-    padding-top: 1rem;  /* Keeps good readability */
+    margin-top: 0.8rem !important;
+    padding-top: 0.8rem !important;
   }
 }
-          
+
 /* For mobile devices (screen width 480px and below) */
 @media (max-width: 480px) {
   .hero {
-    margin-bottom: 0.5rem; /* Even smaller gap on small screens */
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
   }
 
   .about {
-    margin-top: 0.25rem;
-    padding-top: 0.75rem;
+    margin-top: 0.5rem !important;
+    padding-top: 0.5rem !important;
   }
 }
+
 
       /* Dark theme mobile menu */
       .dark-theme .nav-menu {
