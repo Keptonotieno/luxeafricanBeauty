@@ -1523,6 +1523,34 @@
         text-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
         border-left: 3px solid var(--color-gold);
       }
+          
+ /* For tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+  /* ↓ Adjusts spacing below hero section */
+  .hero {
+    margin-bottom: 1rem; /* Reduced from default (was likely larger) */
+    padding-bottom: 1rem; /* Tightens vertical spacing */
+  }
+
+  /* ↓ Adjusts top spacing of About section */
+  .about {
+    margin-top: 0.5rem; /* Reduced top margin */
+    padding-top: 1rem;  /* Keeps good readability */
+  }
+}
+          
+/* For mobile devices (screen width 480px and below) */
+@media (max-width: 480px) {
+  .hero {
+    margin-bottom: 0.5rem; /* Even smaller gap on small screens */
+    padding-bottom: 0.5rem;
+  }
+
+  .about {
+    margin-top: 0.25rem;
+    padding-top: 0.75rem;
+  }
+}
 
       /* Dark theme mobile menu */
       .dark-theme .nav-menu {
